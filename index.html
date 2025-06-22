@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Device Shop Checkout</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="head">
+      <h2>Checkout</h2>
+      <p>3 Items</p>
+    </div>
+    <div class="checkout-container">
+      <!-- Cart Summary -->
+      <div class="cart-summary">
+        <div class="cart-item">
+          <img src="ipong 12.webp" alt="iPhone 12 Pro" />
+          <div class="item-info">
+            <p class="item-name">iPhone 12 Pro</p>
+            <p class="item-color">Golden</p>
+            <p class="item-qty">x 1</p>
+          </div>
+          <div class="item-price">$999.00</div>
+        </div>
+        <div class="cart-item">
+          <img src="watch.webp" alt="iPhone 12 Pro" />
+          <div class="item-info">
+            <p class="item-name">Apple Watch</p>
+            <p class="item-color">Blue</p>
+            <p class="item-qty">x 1</p>
+          </div>
+          <div class="item-price">$399.00</div>
+        </div>
+        <div class="cart-item">
+          <img src="imac.webp" alt="iPhone 12 Pro" />
+          <div class="item-info">
+            <p class="item-name">iMac</p>
+            <p class="item-color">Green</p>
+            <p class="item-qty">x 1</p>
+          </div>
+          <div class="item-price">$1199.00</div>
+        </div>
+
+        <div class="coupon-row">
+          <input type="text" placeholder="Enter coupon code" />
+          <button>Apply Coupon</button>
+        </div>
+
+        <div class="price-summary">
+          <div class="row"><span>Sub total</span><span>$2597.00</span></div>
+          <div class="row"><span>Tax</span><span>$623.28</span></div>
+          <div class="row total">
+            <strong>Total</strong><strong>$3220.28</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h2>Contact Information</h2>
+        <label>First & Last name</label>
+        <input type="text" placeholder="Enter first & last name" />
+        <label>Email Address</label>
+        <input type="email" placeholder="Enter email address" />
+        <label>Country</label>
+        <input type="text" value="Finland" />
+        <button class="checkout-btn">Checkout</button>
+      </div>
+    </div>
+  </body>
+</html>

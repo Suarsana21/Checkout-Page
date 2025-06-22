@@ -1,0 +1,165 @@
+body {
+  font-family: Poppins, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0077b6;
+}
+.head h2 {
+  color: #fff;
+  margin-right: 2rem;
+}
+.head p {
+  border: 1px solid #fff;
+  border-radius: 14px;
+  padding: 0.3rem 0.7rem;
+  color: #0077b6;
+  font-weight: 600;
+  background-color: #fff;
+}
+/* Container grid layout */
+.checkout-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+/* Cart Summary */
+.cart-summary {
+  background: #f5f6f8;
+  padding: 20px;
+  border-radius: 12px;
+  height: max-content;
+  box-shadow: 2px 2px 8px #e0e0e0;
+  margin-bottom: 2rem;
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 60px 1fr auto;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.cart-item img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.item-info .item-name {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.item-info .item-color,
+.item-info .item-qty {
+  font-size: 14px;
+  color: #777;
+}
+
+.item-price {
+  font-weight: 600;
+}
+
+/* Coupon */
+.coupon-row {
+  display: flex;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.coupon-row input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.coupon-row button {
+  padding: 10px 15px;
+  background: #0077b6;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Price Summary */
+.price-summary {
+  margin-top: 30px;
+}
+
+.price-summary .row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.price-summary .total {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Contact Form */
+.contact-info {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-info h2 {
+  margin-bottom: 10px;
+}
+
+.contact-info label {
+  font-size: 14px;
+  color: #444;
+}
+
+.contact-info input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.checkout-btn {
+  margin-top: 20px;
+  padding: 12px;
+  background: #0077b6;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 90%;
+  }
+  .checkout-container {
+    width: 90%;
+    display: block;
+    margin: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 70%;
+  }
+}
